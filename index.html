@@ -7,8 +7,9 @@
     <title>Joel's Website</title>
     <style>
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
-            max-width: calc(100vw - 2rem);
         }
 
         body {
@@ -18,19 +19,27 @@
             padding: 1rem;
         }
 
+        div {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
         footer {
-            position: absolute;
-            bottom: 1rem;
+            position: sticky;
+            top: 100vh;
+            height: 1rem;
         }
     </style>
 </head>
 <body>
+    <marquee>hehehehehehehehehehehehehehehehheeh</marquee>
     <div>
     <h1>Überschrift</h1>
     <p>Lorem Ipsum Dolor Sit</p>
-    <img src="example.jpg">
+    <img width="500" src="example.jpg">
     <a href="https://upload.wikimedia.org/wikipedia/commons/4/48/RedCat_8727.jpg">Link</a>
     </div>
-    <footer>footer content</footer>
+    <footer>***footer content***</footer>
 </body>
 </html>
