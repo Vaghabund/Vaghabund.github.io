@@ -11,6 +11,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: sans-serif;
+            max-width: calc(100vw - 2rem);
         }
 
         body {
@@ -38,7 +39,20 @@
     
     <div><a href="https://upload.wikimedia.org/wikipedia/commons/4/48/RedCat_8727.jpg">Link</a></div>
     </div>
-    <img width="100" src="pikachu.gif">
+    <div><img width="100" src="pikachu.gif"></div>
+    <button id="playButton">meow</button>
+    <div><audio id="audio" src="meow.mp3"></audio></div>
+
+<script>
+    document.getElementById('playButton').addEventListener('click', function() {
+        var audio = document.getElementById('audio');
+        if (audio.paused) {
+            audio.play();
+        }else{
+            audio.currentTime = 0
+        }
+    });
+</script>
     <footer>***footer content***</footer>
 </body>
 </html>
