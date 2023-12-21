@@ -5,43 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joel's Website</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-            max-width: calc(100vw - 2rem);
-        }
-
-        body {
-            margin: 0;
-            height: 100vh;
-            width: 100vw;
-            padding: 1rem;
-        }
-
-        footer {
-            position: sticky;
-            top: 100vh;
-            height: 1rem;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <marquee>hehehehehehehehehehehehehehehehheeh</marquee>
-    <div>
+    <header>
+        <p>bla</p>
+        <a href="mailto:joel@tenenberg.net">joel@tenenberg.net</a>
+        <p>special thanks to <a target=”_blank”  href="https://frogulator.github.io/">kimmi</a></p>
+    </header>
 
-    <h1>Überschrift</h1>
-    <img  src="lights.gif">
-    <p>Lorem Ipsum Dolor Sit</p>
-    <img width="500" src="example.jpg">
+        <div class="wrapper">
+            <div class="info">
+                <h1>Joel Tenenberg</h1>
+                <p>Lorem Ipsum Dolor Sit</p>
+            </div>
+            <div class="content">
+                <h1>Joel Tenenberg</h1>
+                <p>Lorem Ipsum Dolor Sit</p>
+                <img src="example.jpg" alt="cat">
+            </div>
+        </div>
     
-    <div><a href="https://upload.wikimedia.org/wikipedia/commons/4/48/RedCat_8727.jpg">Link</a></div>
-    </div>
-    <div><img width="100" src="pikachu.gif"></div>
-    <button id="playButton">meow</button>
-    <div><audio id="audio" src="meow.mp3"></audio></div>
+   
 
 <script>
     document.getElementById('playButton').addEventListener('click', function() {
@@ -54,7 +39,7 @@
     });
 </script>
 
-<div id="threejs-container"></div>
+<!-- <div id="threejs-container"></div> -->
 
     <script type="importmap">
     {
@@ -67,6 +52,6 @@
     </script>
     <script type="module" src="script.js"></script>
     
-    <footer>***footer content***</footer>
+    <!-- <footer>c2023</footer> -->
 </body>
 </html>
